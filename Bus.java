@@ -31,12 +31,12 @@ class Bus {
     if(isPassengersMax()) {
       return;
     }
-    int passengerCount = passengerCount();
-    passengers[passengerCount] = person;
+    int passengerCount = this.passengerCount();
+    this.passengers[passengerCount] = person;
   }
 
   public boolean isPassengersMax() {
-    return passengerCount() == passengers.length;
+    return this.passengerCount() == this.passengers.length;
   }
 
 }
